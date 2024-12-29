@@ -1,0 +1,545 @@
+/* Base styles */
+body, html {
+    overflow-x: hidden;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* White text for contrast */
+    background-color: black; /* Black background for the entire page */
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    height: auto;
+    min-height: 4.5rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+/* Navbar component styles */
+.container-fluid {
+    width: 100%;
+    height: auto;
+    min-height: 4.5rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Navigation link styles */
+.nav-link {
+    color: #fff !important; /* Ensure navbar links are white */
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+}
+/* Custom button styles */
+.custom-button  {
+    border: 1px solid #7d2ae8;
+    background-color: #a157ff;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: .75rem 1.5rem;
+    font-family: 'Intertight Variablefont Wght', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    display: block; /* Ensure the padding and styles are applied correctly */
+    margin-left: 20px;
+}
+
+.lead{
+text-align: justify;
+
+}
+.work-with-me{
+    
+    border: 1px solid #7d2ae8;
+    background-color: #a057ff4c;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: .75rem 1.5rem;
+    font-family: 'Intertight Variablefont Wght', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    display: block; /* Ensure the padding and styles are applied correctly */
+}
+/* Logo styles */
+.navbar1_logo.bansi-nav-logo {
+    width: 13rem;
+}
+
+.nav-link {
+    color: #fff !important; /* Ensure navbar links are white */
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+.navbar1_logo-link {
+    padding-left: 0;
+}
+
+/* Styles for navbar brand */
+.w-nav-brand {
+    
+    text-decoration: none;
+    position: relative;
+}
+.btn-responsive {
+    width: 100%;
+}
+
+/* Image container adjustment */
+.image-container {
+    margin-top: -20px; /* Adjust the value as needed to move the image up */
+}
+
+.custom-image {
+    border: 0px; }
+
+/* Icon styles */
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.social-icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Increased width */
+    height: 40px; /* Increased height */
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.5rem; /* Increased icon size */
+}
+
+.social-icons:hover {
+    background-color: white; /* LinkedIn blue as default */
+    color: white;
+    transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+.social-icons:hover .icon {
+    fill: white; /* Change icon color to white on hover */
+}
+
+
+.social-icons .icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+.worked-for-companies {
+    text-align: center;
+    padding: 50px 0;
+}
+.worked-for-companies h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: "Wendy One", sans-serif;
+}
+.company-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.company-logos img {
+    max-width: 130px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.company-logo:hover {
+    transform: scale(1.1);
+}
+/* Custom H1 Styles */
+.custom-h1 {
+    font-family: "Gupter", serif;/* Custom font family */
+    font-size: 2.5rem; /* Custom font size */
+    font-weight: 700; /* Bold weight */
+    text-transform: uppercase; /* Transform to uppercase */
+    
+    line-height: 1.2; /* Line height */
+}
+
+.curious-about-work {
+    color: #6131c2; /* Customize the color */
+    letter-spacing: 5.6px;
+    text-transform: uppercase;
+    font-weight: 450;
+}
+
+
+
+.curious-p{
+    color: white;
+    letter-spacing: .14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family:sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+/* Gradient Title */
+.gradient-title {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    font-family: 'Gupter', serif; /* Your custom font */
+    font-weight: 500; /* Bold weight */
+    background: linear-gradient(45deg, #ff6f61, #d64d9b); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Hide default text color */
+    background-clip: text;
+    letter-spacing: 1px;
+    margin-bottom: 2px; /* Spacing below the title */
+}
+.text-size-medium {
+    font-size: 1rem; /* Adjust as needed */
+    font-family: Arial, sans-serif; /* Choose a font family */
+    margin-bottom: 3rem;
+}
+
+.text-size-medium span {
+    font-weight: bold;
+    color:white;
+    padding: 2px 4px; /* Optional padding */
+    border-radius: 3px; /* Optional rounded corners */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between cards */
+    margin-top: 20px; /* Adjust top margin as needed */
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1.5px 3px 5px rgba(251, 251, 251, 0.874);
+    overflow: hidden;
+    width: 400px; /* Adjust card width as needed */
+    text-align: left;
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 16px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 16px 16px 16px 16px;
+    color:black;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1px;
+}
+
+
+.skill-badge {
+    height: 30px;
+    margin-bottom: 1px;
+    object-fit: contain; /* Ensures the aspect ratio is maintained */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.skill.hidden {
+    display: none;
+}
+
+.view-more-link,
+.view-less-link {
+    display: none; /* Hide both by default */
+    margin: 20px auto;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.view-more-link.visible,
+.view-less-link.visible {
+    display: block; /* Show only the visible button */
+}
+
+.skills,.career-timeline{
+    font-family: sans-serif;
+}
+
+/* Adjust the container width for the timeline */
+.timeline-container {
+    padding: 0 15px;
+    max-width: 1200px; /* Adjust as needed for larger width */
+    margin: 0 auto; /* Center the container */
+}
+
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    max-width: 1200px; /* Adjust as needed for larger width */
+    margin: 0 auto; /* Center the container */
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #c0c0c0;
+        width: 5.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem;
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #ffffff;
+        width: 4.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem;
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 11.5rem;
+    text-align: center
+}
+
+
+
+
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9e8260
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #ee1708;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+/* Title and Description Styles */
+.timeline-steps .timeline-content p.h6 {
+    margin: 0.5rem 0;
+    font-weight: bold;
+    font-size: 1.2rem; /* Larger font size for title */
+    color:#f0c70d;
+}
+
+.timeline-steps .timeline-content p {
+    
+    font-size: 1rem; /* Font size for description */
+    margin-top: 0.5rem;
+    line-height: 1.6; /* Improved line height for readability */
+}
+/* Contact Form Styling */
+form {
+    margin-top: 10px; /* Space above the form */
+}
+
+form .form-group {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+form .form-control {
+    border-radius: 5px; /* Rounded corners for inputs and textarea */
+    padding: 12px;
+    font-size: 1rem;
+}
+
+form .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.blockquote {
+    font-size: 1.25rem; /* Size of the quotes */
+    color: #bc03fa; /* Customize color as needed */
+    font-family: 'Georgia', serif; /* Elegant font for quotes */
+    font-weight: bold;
+   
+}
+
+
+
+
+.aboutme{
+    font-style: italic;
+    font-size: 1rem;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: left; /* Center align links */
+    align-items: center;
+    flex-wrap: wrap; /* Wrap links if necessary */
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove default list styling */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fbfbfb; /* Link color */
+    font-size: 1.25rem; /* Adjust size as needed */
+    display: flex;
+    align-items: center;
+}
+
+.social-links a:hover {
+    color: #fcfcfc; /* Darker color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-links .fab {
+    margin-right: 0.5rem; /* Spacing between icon and text */
+    font-size: 1.5rem; /* Adjust icon size */
+    align-items: center;
+}
+
+.separator {
+    color: #6c757d; /* Separator color */
+    font-size: 1.25rem; /* Separator size */
+}
+
+@media (min-width: 769px) {
+    .view-more-link {
+        display: none;
+    }
+}
+@media (min-width: 576px) {
+    .btn-responsive {
+        width: auto;
+    }
+
+    .social-icons .icon {
+       width:auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .card {
+        width: 80%; /* Adjust card width for smaller screens */
+        margin-bottom: 20px;
+        height:80%;
+    }
+    .skills-container {
+        
+        align-items: center;
+    }
+
+    .skill {
+        margin: 10px;
+    }
+
+    .hidden-responsive {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .skills-container {
+        
+        align-items: center;
+    }
+
+    .skill {
+        margin: 5px;
+    }
+
+    .hidden-responsive {
+        display: none;
+    }
+}
