@@ -351,34 +351,39 @@ window.addEventListener('resize', handleResize);
 window.addEventListener('load', handleResize);
 
 
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
+       document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
+    // Collect form data
     const formData = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      message: e.target.message.value
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
     };
 
+    // Send data to Google Apps Script
     fetch('https://script.google.com/macros/s/AKfycbwPuNJDPHc-cx1jFciVcTW0oDB7wTDrz7pvZ77Du-2DBGEiEXequzETBeUDQjBTZbgn/exec', {
-  method: 'POST',
-  mode: 'no-cors', // Fallback mode
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    message: document.getElementById('message').value,
-  }),
-})
-  .then(() => {
-    alert('Message sent (but no confirmation received).');
-  })
-  .catch(error => {
-    console.error('Error:', error);
-    alert('Failed to send the message.');
-  });
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData), // Stringify the JSON payload
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        alert(data.message || 'Message sent successfully!');
+        document.getElementById('contact-form').reset(); // Reset the form
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to send the message. Please try again later.');
+    });
+});
 
     </script>
     
