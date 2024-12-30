@@ -360,21 +360,24 @@ window.addEventListener('load', handleResize);
       message: e.target.message.value
     };
 
-    fetch('https://script.google.com/macros/s/AKfycbwXnaj9MH04j_4YX7knWH3J6Yyn6FNDTKnL5sUPQFxV7t1ezicK2VF_K6xaFjvPFoax/exec', { // Replace with your Web App URL
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData)
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-      alert(data.message); // Show success message
-      e.target.reset();    // Clear the form
-    })
-    .catch(error => {
-        console.error('Error:', error);
-      alert('Error: ' + error.message);
-    });
+    fetch('https://script.google.com/macros/s/AKfycbwPuNJDPHc-cx1jFciVcTW0oDB7wTDrz7pvZ77Du-2DBGEiEXequzETBeUDQjBTZbgn/exec', {
+  method: 'POST',
+  mode: 'no-cors', // Fallback mode
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  }),
+})
+  .then(() => {
+    alert('Message sent (but no confirmation received).');
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('Failed to send the message.');
   });
 
     </script>
