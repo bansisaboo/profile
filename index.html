@@ -253,6 +253,13 @@
                     </div>
                     <button type="submit" class="btn btn-outline-light btn-lg px-4 me-md-2 work-with-me">Send Message</button>
                 </form>
+
+                <form id="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
             </div>
         </div>
     </div>
@@ -342,6 +349,31 @@ function handleResize() {
 
 window.addEventListener('resize', handleResize);
 window.addEventListener('load', handleResize);
+
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value
+    };
+
+    fetch('https://script.google.com/macros/s/AKfycbwXnaj9MH04j_4YX7knWH3J6Yyn6FNDTKnL5sUPQFxV7t1ezicK2VF_K6xaFjvPFoax/exec', { // Replace with your Web App URL
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+      alert(data.message); // Show success message
+      e.target.reset();    // Clear the form
+    })
+    .catch(error => {
+      alert('Error: ' + error.message);
+    });
+  });
 
     </script>
     
