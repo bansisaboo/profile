@@ -543,3 +543,15 @@ form .btn {
         display: none;
     }
 }
+
+.location-info {
+    display: inline-block;
+    margin-top: -15px;
+    font-size: 14px;
+    
+}
+
+.location-info i {
+    color: #007bff;  /* Blue color for the icon */
+    margin-right: 5px;
+}
